@@ -1,6 +1,10 @@
+<div class="header">
+    <img src="../assets/img/burgerpng.png" class="icon">
+    <h2 class="title">Eat-Da-Burger</h2>
+    </div>
 <div class="container">
 <div class="notEaten">
-    <h2>Eat-Da-Burger</h2>
+    <h2>Menu</h2>
     <ul>
         {{#each burger}}
             {{#unless this.devoured}}
@@ -17,7 +21,7 @@
 </div>
 
 <div class="eaten">
-    <h2>Da-Burger-Eaten</h2>
+    <h2>Devoured</h2>
     <ul>
         {{#each burger}}
             {{#if this.devoured}}
