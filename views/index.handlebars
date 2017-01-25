@@ -5,7 +5,7 @@
         {{#each burger}}
             {{#unless this.devoured}}
                 <li>
-                    {{this.burger_type}}
+                   {{this.id}}. {{this.burger_type}}
                     <form action="burger/update/{{this.id}}?_method=PUT" method="POST">
                         <input type="hidden" name="devoured" value="true">
                         <button type="submit">Devour!</button>
@@ -22,7 +22,7 @@
         {{#each burger}}
             {{#if this.devoured}}
                 <li>
-                    {{this.burger_type}}
+                    {{this.id}}. {{this.burger_type}}
                 </li>
             {{/if}}
         {{/each}}
