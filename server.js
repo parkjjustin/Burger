@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(methodOverride("_method"));
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 
@@ -22,5 +22,5 @@ app.set('view engine', 'handlebars');
 app.use("/", burgerRoutes);
 
 app.listen(PORT, function() {
-  console.log("Listening on PORT " + PORT);
+    console.log("Listening on PORT " + PORT);
 });
